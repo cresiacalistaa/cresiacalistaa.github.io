@@ -1,9 +1,221 @@
 <!DOCTYPE html>
-<HTML>
-<HEAD>
-<Title> Test </Title>
-</HEAD>
-<BODY>
-  Helloo
-</BODY>
-</HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cresia Portofolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Hepta+Slab:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: "poppins";
+      color: #000000;
+      background-color: #FEE2F3;
+    }
+
+    nav ul {
+      display: flex;
+      column-gap: 49px;
+      list-style: none;
+      justify-content: end;
+      margin-right:40px;
+      font-family: "hepta slab";
+      font-weight: 600;
+      
+    }
+
+    a{
+      color: #000000;
+      text-decoration: none;
+    }
+
+    hr{
+      border-color: #000000;
+      border: 1px;
+      border-style: solid;
+    }
+
+    .pink-button{
+      font-family: "hepta slab";
+      font-weight: 600;
+      background-color: #FBBFE7;
+      border: 0;
+      border-radius: 50px;
+      padding: 5px;
+      margin-right: 12px;
+    }
+
+    
+
+    #about h1, .education h1, .experience h1, .professional_skills h1, .soft_skills h1, #project h1, #contact h1  {
+      font-family: "hepta slab";
+    }
+
+    .professional_skills img{
+      width: 90px;
+    }
+  
+    #project .pic_1{
+      height: 640px;
+    }
+
+    #project .pic_2{
+      height: 640px;
+    }
+
+    #project .pic_3{
+      width: 640px;
+      height: 458px;
+    }
+
+    #project .pic_4{
+      height: 543px;
+    }
+
+    #contact h1{
+      font-family: "hepta slab";
+    }
+
+    #contact h2, #contact p, #contact h3{
+      font-family: "eczar";
+    }
+
+    input{
+      background-color: #D9D9D9;
+      border: 0;
+      width: 800px;
+      padding: 8px;
+    }
+
+    textarea{
+      background-color: #D9D9D9;
+      border: 0;
+      width: 800px;
+      padding: 8px;
+    }
+
+    .my_contact img{
+      width: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <div id="home">
+      <h1>HELLO, I'M</h1>
+      <h1>CRESIA CALISTA</h1>
+      <h1>THEADORA</h1>
+      <h1>Digital Marketing</h1>
+      <hr>
+      <p>Join me on a journey of creativity and innovation as i showcase my digital marketing skills through my UI
+        portofolio on Figma</p>
+      <button class="pink-button"> Contact Me </button>
+      <button class="pink-button"> Read More </button>
+
+      <div id="about">
+        <h1>ABOUT</h1>
+        <p>Hi! I'm Cresia Calista Theadora. Im a Digital Marketing. I am a highly motivated person equipped with
+          integrity and goals.</p><br>
+        <p>During my college, I actively participated in external and internal organizations which honed my soft skills
+          such as problem-solving, and working in a team.</p><br>
+        <p>I am extremely interested in Public Relations, Marketing Communication, and Social Media Marketing</p>
+      </div>
+
+      <div class="education">
+        <h1>Education</h1>
+        <p>2018 - 2021<br></p>
+        <p>St.Peter Senior High School<br></p>
+        <p>Specialization Subjects of Social Science<br></p>
+        <p>2021 - 2025<br></p>
+        <p>Widya Dharma University<br></p>
+        <p>Digital Business<br></p>
+      </div>
+
+      <div class="experience">
+        <h1>Experience</h1>
+        <p>2021 - Recent<br></p>
+        <p>CV. Cahaya Niaga <br></p>
+        <p>Digital Marketing<br></p>
+      </div>
+
+      <div class="professional_skills">
+        <h1>Professional Skills</h1>
+        <img src="canva.png">
+        <img src="office.webp">
+        <img src="figma.webp">
+        <img src="photoshop.png">
+      </div>
+
+      <div class="soft_skills">
+        <h1>Soft Skill</h1>
+        <p>Team work<br></p>
+        <p>Communication<br></p>
+        <p>Time managment<br></p>
+        <p>Creative<br></p>
+
+        <div id="project">
+          <h1>PROJECT</h1>
+          <img class="pic_1" src="project pic 1.jpg">
+          <img class= "pic_2" src="project pic 2.jpeg">
+          <img class= "pic_3" src="project pic 3.jpg">
+          <img class= "pic_4" src="project pic 4.jpg">
+        </div>
+
+        <div id="contact">
+          <h1>CONTACT ME</h1>
+          <h2>Let's Work Together</h2>
+          <p>That's all about me</p>
+          <p>Don't feel hesitate to contact me. I would be thrilled to take a</p>
+          <h3>Journey with you!!</h3>
+
+
+          <form name="contact-message" onsubmit="return validateForm()" method="post"></form>
+          <label> Name: </label>
+          <br>
+          <input type="text" id="name" name="name" required placeholder="Name" pattern="a-z,A-Z"
+            title="Name should only contains letter">
+
+          <br>
+
+          <label> Email: </label>
+          <br>
+          <input type="email" id="email" name="email" required placeholder="Email">
+
+          <br>
+
+          <label> Message: </label>
+          <br>
+          <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+          <br>
+          <button class="pink-button">SEND</button>
+          </form>
+        </div>
+
+        <div class="my_contact">
+          <img src="instagram.png"\>cresiacalistaa<br>
+          <img src="email.png" \> cresiacalista1310@gmail.com<br>
+          <img src="whatsapp.png"\> 082150452547<br>
+        </div>
+
+  </main>
+</body>
+
+</html>
