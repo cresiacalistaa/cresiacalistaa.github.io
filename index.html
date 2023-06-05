@@ -1,9 +1,452 @@
 <!DOCTYPE html>
-<HTML>
-<HEAD>
-<Title> Test </Title>
-</HEAD>
-<BODY>
-  Helloo
-</BODY>
-</HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cresia Portofolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Hepta+Slab:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: "poppins";
+      color: #000000;
+      background-color: #FEE2F3;
+      width:100%;
+    }
+
+    nav ul {
+      display: flex;
+      column-gap: 48px;
+      list-style: none;
+      justify-content: end;
+      margin-right:40px;
+      font-family: "hepta slab";
+      font-weight: 600;
+
+      font-size: 32px;
+    }
+
+    a{
+      color: #000000;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>   
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-container">
+      <div class="home-image">
+        <img src="BlobHome.png" alt="">
+      </div>
+      <div class="home-desc">
+        <span>HELLO, I'M</span>
+        <span>CRESIA CALISTA</span>
+        <span>THEADORA</span>
+        <span>Digital Marketing</span>
+          <div class="home-rectangle"></div>
+          <h4>Join me on a journey of creativity and innovation as i showcase my digital marketing skills through my UI
+               portofolio on Figma</h4>
+          <div class="home-button">
+            <div class="home-contact"> <a href="#contact"> Contact Me </a></div>
+            <div class="home-readmore"> <a href="#about"> Read More </a></div>
+          </div>
+        </div>
+
+      </div>
+      <style>
+        span {
+          display: block;
+          font-size: 48px;
+          font-weight: 600;
+        }
+
+        .home-container {
+          display: flex;
+          justify-content: space-between;
+          top: -110px;
+          z-index: 5;
+        }
+
+        .home-image {
+          margin-left: 112px;
+          margin-top: -110px;
+          height: 595px;
+          width: 450px;
+        }
+
+        .home-rectangle{
+          width: 1000px;
+          height: 2px;
+          background-color: black;
+          margin-top: 24px;
+        }
+
+        .home-contact, .home-readmore{
+          font-size: 24px;
+          font-weight: 600;
+          font-family: 'hepta slab';
+          background-color: #FBBFE7;
+          border-radius: 50px;
+          height: 50px;
+          width: 200px;
+          text-align: center;
+          padding-top: 18px;
+          margin-right: 20px;
+        }
+
+        .home-desc{
+          margin: 100px 100px 0px 115px;
+          margin-right: 103px;
+          margin-left: 115px;
+        }
+
+        .home-button {
+          display: flex;
+        }
+
+        .home h4 {
+          font-size: 24px;
+        }
+      </style>
+      </section>
+
+      <section class="about">
+      <div class="about-container">
+        <div class="about-desc" id="about">
+        <h2>ABOUT</h2>
+        <span>Hi! I'm Cresia Calista Theadora. Im a Digital Marketing. I am a highly motivated person equipped with
+          integrity and goals.</span>
+        <span>During my college, I actively participated in external and internal organizations which honed my soft skills
+          such as problem-solving, and working in a team.</span>
+        <span>I am extremely interested in Public Relations, Marketing Communication, and Social Media Marketing</span>
+        </div>
+        <img class="about-image" src="BlobAbout.png">
+      </div>
+      <style>
+        .about span {
+          display: block;
+          font-size: 24px;
+          font-family: 'Poppins';
+          padding-bottom: 20px;
+          font-weight: 400;
+        }
+        .about h2 {
+          font-size: 48px;
+          font-family: 'Hepta Slab';
+        }
+        .about-container {
+          display: flex;
+        }
+        .about-container{
+          margin-left: 126px;
+          display: flex;
+          justify-content: space-between;
+        }
+        .about {
+          margin-top: 100px;
+          margin-bottom: 100px;
+          padding-top: 100px;
+          background-color: #FEEEF8;
+        }
+      </style>
+    </section>
+
+      <section class="details">
+        <div class="details-container">
+          <div class="details-left">
+        <h1>Education</h1>
+        <span>2018 - 2021</span>
+        <span class="details-bold">SMA Katolik Santu Petrus</span>
+        <span>Jurusan Ilmu Sosial</span>
+        <span>2021 - 2025</span>
+        <span class="details-bold">Universitas Widya Dharma</span>
+        <span>Bisnis Digital</span>
+        <h1>Experience</h1>
+        <span>2021 - Recent</span>
+        <span class="details-bold">CV. Cahaya Niaga</span>
+        <span>Digital Marketing</span>
+         </div>
+         <div class="details-right">
+          <h1>Professional Skills</h1>
+          <div class="prof-skills">
+            <img src="canva.png" alt="">
+            <img src="office.webp" alt="">
+            <img src="figma.webp" alt="">
+            <img src="photoshop.png" alt="">
+          </div>
+          <h1>Soft Skills</h1>
+        <div class="skill-wrapper">
+          <div class="soft-skills">
+            <h4>Team work</h4>
+            <img src="5stars.png" alt="">
+          </div>
+          <div class="soft-skills">
+            <h4>Communication</h4>
+            <img src="5stars.png" alt="">
+          </div>
+          <div class="soft-skills">
+            <h4>Time Management</h4>
+            <img src="5stars.png" alt="">
+          </div>
+          <div class="soft-skills">
+            <h4>Creative</h4>
+            <img src="5stars.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <style>
+      .details {
+        margin-left: 126px;
+        margin-right: 120px;
+        height: 800px;
+      }
+      .details-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .details span {
+        font-size: 24px;
+        font-weight: 400;
+      }
+      .details h1 {
+        font-size: 48px;
+        font-family: 'Hepta Slab';
+      }
+      .details .details-bold {
+        font-weight: 700;
+      }
+      .prof-skills img {
+        width: 100px;
+        height: 100px;
+        padding-right: 25px;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+      }
+      .soft-skills {
+        display: flex;
+        justify-content: space-between;
+      }
+      .soft-skills img {
+        width: 165px;
+        height: 36px;
+      }
+      .soft-skills h4 {
+        font-size: 24px;
+        margin-top: -16px;
+        font-weight: 400;
+      }
+    </style>
+  </section>
+
+      <section class="project" id="project">
+        <div class="project-container">
+          <h2>PROJECT</h2>
+          <div class="project-image">
+            <div class="project-row1">
+              <img class="img1" src="project pic 1.jpg" alt="">
+              <img class="img2" src="project pic 2.jpeg" alt="">
+            </div>
+
+            <div class="project-row2">
+              <img class="img3" src="project pic 3.jpg" alt="">
+              <img class="img4" src="project pic 4.jpg" alt="">
+            </div>
+          </div>
+            <style>
+            .project .img1 {
+              height: 640px;
+              width: 687px;
+            }
+            .project .img2 {
+              height: 640px;
+              width: 435px;
+              margin-left: 40px;
+            }
+            .project .img3 {
+              height: 458px;
+              width: 640px;
+            }
+            .project .img4 {
+              height: 543px;
+              width: 495px;
+              margin-left: 40px;
+            }
+            .project-row1 {
+              display: flex;
+            }
+            .project-row2 {
+              display: flex;
+              margin-top: 40px;
+            }
+            .project-image {
+              display: block;
+              justify-content: space-between;
+              text-align: center;
+              filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+              margin-left: 120px;
+            }
+            .project{
+              background-color: #FEEEF8;
+              padding-top: 80px;
+              padding-bottom: 80px;
+              
+            }
+            .project h2 {
+              font-size: 48px;
+              font-family: 'Hepta Slab';
+              text-align: end;
+              margin-right: 120px;
+            }
+          </style>
+        </div>
+
+      </section>
+
+      <section class="contact" id="contact">
+          <div class="contact-container">
+            <div class="contact-title">
+              <h1>CONTACT ME</h1>
+              <h2>Let's Work Together</h2>
+              <span>That's all about me</span>
+              <span>Don't feel hesitate to contact me. I would be thrilled to take a</span>
+              <span class="bold">Journey with you</span>
+              <br><br>
+            </div>
+
+            <div class="contact-form">
+              <form action="" post="method">
+              <label for="name">Name:</label><br>
+              <input type="text" class="text-input" id="name" name="name" required placeholder="Write your name here"><br>
+
+              <label for="email">Email:</label><br>
+              <input type="email" class="text-input" id="email" name="email" required placeholder="Write your email here"><br>
+
+              <label for="message">Message:</label><br>
+              <textarea id="message" class="message-input" name="message" required placeholder="Write your message here"></textarea><br>
+
+              <input class="submit" type="submit" value="SEND" class="submit">
+              </form>
+            </div>
+          </div>
+
+          <div class="contact-icon">
+              <a href="https://www.instagram.com/cresiacalistaa"><img src="instagram.png"/><h4>cresiacalistaa</h4></a>
+              <a href="mailto:cresiacalista310.com@gmail.com"><img src="email.png"/><h4>cresiacalista1310@gmail.com</h4></a>
+              <a href="https://www.whatsapp.com/082150452547"><img src="whatsapp.png"/><h4>082150452547</h4></a>
+          </div>
+          <style>
+            .contact h1 {
+              font-size: 80px;
+              font-weight: 600;
+            }
+            .contact {
+              padding-top: 100px;
+              font-family: 'Eczar';
+            }
+            .contact span {
+              display: block;
+              font-size: 32px;
+              font-weight: 400;
+            }
+            .contact h2 {
+              font-size: 48px;
+              font-weight: 500;
+            }
+            .contact .bold {
+              font-weight: 600;
+            }
+            .contact .contact-form {
+              margin-right: 120px;
+              display: block;
+            }
+            .contact-title{
+              text-align: center;
+            }
+            .contact input {
+              width: 1200px;
+              margin-left: 120px;
+              background-color: white;
+              height: 50px;
+              border: none;
+              border-radius: 5px;
+              margin-bottom: 16px;
+            }
+            .contact textarea {
+              width: 1200px;
+              margin-left: 120px;
+              background-color: white;
+              height: 120px;
+              border: none;
+              border-radius: 5px;
+            }
+            .contact label {
+              font-size: 32px;
+              font-weight: 400;
+              font-family: 'Poppins';
+              margin-left: 120px;
+              margin-bottom: -26px;
+            }
+            .contact .submit {
+              height: 50px;
+              width: 194px;
+              background-color: #FFF1DC;
+              border-radius: 50px;
+              height: 60px;
+              width: 200px;
+              font-size: 32px;
+              justify-content: flex-end;
+              margin-top: 16px;
+              background: #FBBFE7;
+              text-align: center;
+              font-family: 'Poppins';
+              font-weight: 700;
+            }
+            .contact-form {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .contact-icon img{
+              height: 56.25px;
+              width: 56.25px;
+            }
+            .contact-icon h4 {
+              display: inline;
+              justify-content: center;
+              font-size: 24px;
+              font-family: 'Poppins';
+              font-weight: 400;
+              margin-top: 30px;
+              margin-left: 20px;
+              line-height: 58px;
+            }
+            .contact-icon {
+              display: flex;
+              justify-content: space-around;
+              text-align: center;
+              margin-left: 120px;
+              margin-right: 120px;
+              margin-top: 90px;
+            }
+          </style>
+        </section>
+</body>
+
+</html>
+
