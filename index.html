@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cresia Portofolio</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Hepta+Slab:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
@@ -18,23 +18,8 @@
       width:100%;
     }
 
-    nav ul {
-      display: flex;
-      column-gap: 48px;
-      list-style: none;
-      justify-content: end;
-      margin-right:40px;
-      font-family: "hepta slab";
-      font-weight: 600;
-      font-size: 32px;
-    }
-
-    a{
-      color: #000000;
-      text-decoration: none;
-    }
-</style>
-</head>
+    </style>
+  </head>
 
 <body>
   <header>
@@ -46,12 +31,35 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>   
+    <style> 
+    nav ul {
+      float: right;
+      list-style: none;
+      justify-content: end;
+      margin-right: 8.125%;
+      font-family: "hepta slab";
+      font-weight: 600;
+      font-size: 32px;
+    }
+
+    nav li{
+      display: inline;
+      padding-right: 48px;
+      z-index: 500;
+    }
+
+    a{
+      color: #000000;
+      text-decoration: none;
+    }
+
+    </style>
   </header>
 
     <section class="home" id="home">
     <div class="home-container">
       <div class="home-image">
-        <img src="BlobHome.png" alt="">
+        <img src="BlobHome.png" alt="" id="home">
       </div>
 
       <div class="home-desc">
@@ -63,12 +71,16 @@
         <h4>Join me on a journey of creativity and innovation as i showcase my digital marketing skills through my UI
              portofolio on Figma</h4>
         <div class="home-button">
-          <div class="home-contact"> Contact Me </div>
-          <div class="home-readmore"> Read More </div>
+          <div class="home-contact"> <a href="#contact"> Contact Me</a></div>
+          <div class="home-readmore"> <a href="#about"> Read More </a></div>
         </div>
       </div>
-    </div>
       <style>
+        .home{
+          display: flex;
+          justify-content: space-between;
+        }
+  
         span {
           display: block;
           font-size: 48px;
@@ -80,6 +92,8 @@
           justify-content: space-between;
           top: -110px;
           z-index: 5;
+          margin-right: 8.125%;
+          margin-left: 8.125%;
         }
 
         .home-image {
@@ -87,10 +101,10 @@
           margin-top: -110px;
           height: 595px;
           width: 450px;
+          z-index: -1000;
         }
 
         .home-rectangle{
-          width: 1000px;
           height: 2px;
           background-color: black;
           margin-top: 24px;
@@ -110,9 +124,8 @@
         }
 
         .home-desc{
-          margin: 100px 100px 0px 115px;
-          margin-right: 103px;
-          margin-left: 115px;
+          margin: 100px 0px 0px 115px;
+          display:block;
         }
 
         .home-button {
@@ -123,6 +136,7 @@
           font-size: 24px;
         }
       </style>
+      </div>
       </section>
     
       <section class="about">
@@ -135,7 +149,9 @@
           such as problem-solving, and working in a team.</span>
         <span>I am extremely interested in Public Relations, Marketing Communication, and Social Media Marketing</span>
         </div>
+        <div class="about-image-container">
         <img class="about-image" src="BlobAbout.png">
+      </div>
       </div>
       <style>
         .about span {
@@ -148,13 +164,12 @@
         .about h2 {
           font-size: 48px;
           font-family: 'Hepta Slab';
+          padding-top: 50px;
         }
         .about-container {
           display: flex;
-        }
-        .about-container{
-          margin-left: 126px;
-          display: flex;
+          margin-right: 8.125%;
+          margin-left: 8.125%;
           justify-content: space-between;
         }
         .about {
@@ -162,6 +177,7 @@
           margin-bottom: 100px;
           padding-top: 100px;
           background-color: #FEEEF8;
+          width: 100%;
         }
       </style>
     </section>
@@ -182,14 +198,22 @@
         <span>Digital Marketing</span>
          </div>
 
-      <div class="details-right">
-        <h1>Professional Skills</h1>
-        <div class="prof-skills">
-        <img src="canva.png" alt="">
-        <img src="office.webp" alt="">
-        <img src="figma.webp" alt="">
-        <img src="photoshop.png" alt="">
-      </div>
+         <div class="details-right">
+          <h1>Professional Skills</h1>
+          <div class="prof-skills">
+            <div class="prof-skills-image">
+              <img src="canva.png" alt="">
+            </div>
+            <div class="prof-skills-image">     
+              <img src="office.webp" alt="">
+            </div>
+            <div class="prof-skills-image">           
+              <img src="figma.webp" alt="">
+            </div>
+            <div class="prof-skills-image">          
+              <img src="photoshop.png" alt="">
+            </div>
+          </div>
 
       <h1>Soft Skills</h1>
         <div class="skill-wrapper">
@@ -214,8 +238,8 @@
     </div>
     <style>
       .details {
-        margin-left: 126px;
-        margin-right: 120px;
+        margin-left: 8.125%;
+        margin-right: 8.125%;
         height: 800px;
       }
       .details-container {
@@ -239,6 +263,10 @@
         padding-right: 25px;
         filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
       }
+      .prof-skills {
+        display: flex;
+        justify-content: space-between;
+      }
       .soft-skills {
         display: flex;
         justify-content: space-between;
@@ -255,24 +283,34 @@
     </style>
   </section>
 
-      <section class="project">
-        <div class="project-container">
-          <h2>PROJECT</h2>
-          <div class="project-image">
-            <div class="project-row1">
+  <section class="project" id="project">
+    <div class="project-container">
+      <h2>PROJECT</h2>
+      <div class="project-image-container">
+        <div class="project-image">
+          <div class="project-row1">
+            <div class="project-row1-image">  
               <img class="img1" src="project pic 1.jpg" alt="">
+            </div>
+            <div class="project-row1-image">  
               <img class="img2" src="project pic 2.jpeg" alt="">
             </div>
-    
-            <div class="project-row2">
+            <div class="project-row1-image"> 
               <img class="img3" src="project pic 3.jpg" alt="">
+            </div>
+            <div class="project-row1-image"> 
               <img class="img4" src="project pic 4.jpg" alt="">
             </div>
           </div>
+          <div class="project-col"></div>
+        </div>
+      </div>
+      </div>
             <style>
             .project .img1 {
               height: 640px;
               width: 687px;
+              margin-left: 40px;
             }
             .project .img2 {
               height: 640px;
@@ -282,42 +320,51 @@
             .project .img3 {
               height: 458px;
               width: 640px;
+              margin-left: 40px;
             }
             .project .img4 {
               height: 543px;
               width: 495px;
               margin-left: 40px;
             }
+            .project-image-container{
+              display: flex;
+              justify-content: center;
+              margin-left:12.5%;
+              margin-right:12.5%;
+            }
             .project-row1 {
               display: flex;
+              flex-wrap: wrap;
             }
-            .project-row2 {
-              display: flex;
+            .project-row1 img {
               margin-top: 40px;
             }
             .project-image {
-              display: block;
-              justify-content: space-between;
+              display: flex;
+              flex-wrap: wrap;
               text-align: center;
               filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-              margin-left: 120px;
+              margin-left: 8.125%;
+              margin-right:8.125%;
             }
             .project{
               background-color: #FEEEF8;
               padding-top: 80px;
               padding-bottom: 80px;
+              width: 100%;
             }
             .project h2 {
               font-size: 48px;
               font-family: 'Hepta Slab';
               text-align: end;
-              margin-right: 120px;
+              margin-right:8.125%;
             }
           </style>
         </div>
       </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-container">
               <div class="contact-title">
                 <h1>CONTACT ME</h1>
@@ -331,13 +378,13 @@
               <div class="contact-form">
                 <form action="" post="method">
                 <label for="name">Name:</label><br>
-                <input type="text" class="text-input" id="name" name="name" required placeholder="Masukkan nama anda"><br>
+                <input type="text" class="text-input" id="name" name="name" required placeholder="Write your name here"><br>
               
                 <label for="email">Email:</label><br>
-                <input type="email" class="text-input" id="email" name="email" required placeholder="Masukkan email anda"><br>
+                <input type="email" class="text-input" id="email" name="email" required placeholder="Write your email here"><br>
               
                 <label for="message">Message:</label><br>
-                <textarea id="message" class="message-input" name="message" required placeholder="Masukkan pesan anda"></textarea><br>
+                <textarea id="message" class="message-input" name="message" required placeholder="Write your message here"></textarea><br>
               
                 <input class="submit" type="submit" value="SEND" class="submit">
                 </form>
@@ -371,35 +418,38 @@
                 font-weight: 600;
               }
               .contact .contact-form {
-                margin-right: 120px;
+                margin-right: 8.125%;
                 display: block;
               }
               .contact-title{
                 text-align: center;
               }
-              .contact input {
-                width: 1200px;
-                margin-left: 120px;
-                background-color: white;
-                height: 50px;
+              .form .contact-form, form .text-input, form textarea {
+                justify-content: center;
+                align-self: center;
                 border: none;
-                border-radius: 5px;
+                outline:none;
+                width: 80%;
+                padding: 25px;
+                font-size:medium;
+                font-weight:bold;
                 margin-bottom: 16px;
-              }
-              .contact textarea {
-                width: 1200px;
-                margin-left: 120px;
-                background-color: white;
-                height: 120px;
-                border: none;
                 border-radius: 5px;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 24px;
+                font-weight: 500;
+                font-family: 'poppins';
+              }
+              .form textarea{
+                height: 100px;
               }
               .contact label {
-                font-size: 32px;
-                font-weight: 400;
-                font-family: 'Poppins';
-                margin-left: 120px;
-                margin-bottom: -26px;
+               font-size: 32px;
+               font-weight: 400;
+               font-family: 'poppins';
+               margin-left: 10%;
+               margin-bottom: -26px;
               }
               .contact .submit {
                 height: 50px;
@@ -415,6 +465,7 @@
                 text-align: center;
                 font-family: 'Poppins';
                 font-weight: 700;
+                margin-left: 10%;
               }
               .contact-form {
                 display: flex;
@@ -422,29 +473,30 @@
                 align-items: center;
               }
               .contact-icon img{
-                height: 56.25px;
-                width: 56.25px;
+                height: 40px;
+                width: 40px;
               }
               .contact-icon h4 {
                 display: inline;
-                justify-content: center;
-                font-size: 24px;
+                text-align: center;
+                font-size: 28px;
                 font-family: 'Poppins';
                 font-weight: 400;
-                margin-top: 30px;
                 margin-left: 20px;
                 line-height: 58px;
+                padding-bottom: 10px;
               }
               .contact-icon {
                 display: flex;
                 justify-content: space-around;
                 text-align: center;
-                margin-left: 120px;
-                margin-right: 120px;
+                margin-left: 10%;
+                margin-right: 15%;
                 margin-top: 90px;
               }
+            
             </style>
           </section>
-  </body>
+</body>
 
 </html>
