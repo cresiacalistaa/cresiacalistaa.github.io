@@ -16,24 +16,22 @@ nav ul {
     flex-wrap:wrap;
     column-gap: 48px;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
+    
   }
 
-  nav {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    z-index: 50;
-  }
-
-  nav .nav-menu{
-    margin-right: 112px;
-    float: right;
-  }
 
   a{
     color: #000000;
     text-decoration: none;
+  }
+
+  hr{
+    border-bottom: 3px;
+    background-color: black;
+    width: 100%;
+  
+
   }
 
   .home{
@@ -59,11 +57,13 @@ nav ul {
   }
 
   .home-image1 img {
-    margin-left: 112px;
-    margin-top: -110px;
-    height: 595px;
-    width: 450px;
-    z-index: -1000;
+    margin-top: 100px;
+    margin-left: 84px; 
+    width: 527px;
+    height: 515px;
+    
+    
+    z-index: -10;
   }
 
   .home-rectangle{
