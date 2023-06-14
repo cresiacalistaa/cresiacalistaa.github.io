@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Hepta+Slab:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+  color: #000000;
+  background-color: #FEE2F3;
+  width:100%;
+}
+nav ul {
+    font-family: "hepta slab";
+    font-weight: 600;
+    font-size: 32px;
+    display: flex;
+    flex-wrap:wrap;
+    column-gap: 48px;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    z-index: 50;
+  }
+
+  nav .nav-menu{
+    margin-right: 112px;
+    float: right;
+  }
+
+  a{
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .home{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span {
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-container1{
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+  }
+
+  .home-image1 img {
+    margin-left: 112px;
+    margin-top: -110px;
+    height: 595px;
+    width: 450px;
+    z-index: -1000;
+  }
+
+  .home-rectangle{
+    height: 2px;
+    background-color: black;
+    margin-top: 24px;
+    margin-right: 123px;
+  }
+
+  .home-contact, .home-readmore{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'hepta slab';
+    background-color: #FBBFE7;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    padding-top: 18px;
+    margin-right: 20px;
+  }
+
+  .home-desc{
+    margin: 100px 0px 0px 131px;
+    display:block;
+    z-index: -10;
+  }
+
+  .home-button {
+    display: flex;
+  }
+
+  .home h4 {
+    font-size: 24px;
+    margin-right: 123px;
+  }
+
+  .about span {
+    display: block;
+    font-size: 24px;
+    font-family: 'Poppins';
+    padding-bottom: 20px;
+    font-weight: 400;
+  }
+  .about h2 {
+    font-size: 48px;
+    font-family: 'Hepta Slab';
+    padding-top: 50px;
+  }
+  .about-container {
+    display: flex;
+    margin-left: 128px;
+    justify-content: space-between;
+  }
+  .about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    background-color: #FEEEF8;
+    width: 100%;
+  }
+
+  .about-image-container img{
+    object-fit: contain;
+  }
+
+  .details {
+    margin-left: 128px;
+    margin-right: 128px;
+    height: 800px;
+  }
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .details span {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .details h1 {
+    font-size: 48px;
+    font-family: 'Hepta Slab';
+  }
+  .details .details-bold {
+    font-weight: 700;
+  }
+  .prof-skills img {
+    width: 100px;
+    height: 100px;
+    padding-right: 25px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  }
+  .prof-skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  .soft-skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  .soft-skills img {
+    width: 165px;
+    height: 36px;
+    margin-top: -16px;
+  }
+  .soft-skills h4 {
+    font-size: 24px;
+    margin-top: -16px;
+    font-weight: 400;
+  }
+  .project .img1 {
+    height: 640px;
+    width: 687px;
+  }
+  .project .img2 {
+    height: 640px;
+    width: 435px
+}
+  .project .img3 {
+    height: 458px;
+    width: 640px;
+  }
+  .project .img4 {
+    height: 543px;
+    width: 495px;
+  }
+  .project-image-container{
+    display: flex;
+    justify-content: center;
+    margin-left:12,5%;
+    margin-right:12,5%;
+  }
+  .project-row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 128px;
+  }
+  .project-row1 img {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .project-image {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+  }
+  .project{
+    background-color: #FEEEF8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+  }
+  .project h2 {
+    font-size: 48px;
+    font-family: 'Hepta Slab';
+    text-align: end;
+    margin-right:128px;
+  }
+  .contact h1 {
+    font-size: 80px;
+    font-weight: 600;
+  }
+  .contact {
+    padding-top: 100px;
+    font-family: 'Eczar';
+  }
+  .contact span {
+    display: block;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .contact h2 {
+    font-size: 48px;
+    font-weight: 500;
+  }
+  .contact .bold {
+    font-weight: 600;
+  }
+  .contact .contact-form {
+    margin-right: 128px;
+    display: block;
+  }
+  .contact-title{
+    text-align: center;
+  }
+  .form .contact-form, form .text-input, form textarea {
+    justify-content: center;
+    align-self: center;
+    border: none;
+    outline:none;
+    width: 80%;
+    padding: 25px;
+    font-size:medium;
+    font-weight:bold;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'poppins';
+  }
+  .form textarea{
+    height: 100px;
+  }
+  .contact label {
+   font-size: 32px;
+   font-weight: 400;
+   font-family: 'poppins';
+   margin-left: 10%;
+   margin-bottom: -26px;
+  }
+  .contact .submit {
+    height: 50px;
+    width: 194px;
+    background-color: #FFF1DC;
+    border-radius: 50px;
+    height: 60px;
+    width: 200px;
+    font-size: 32px;
+    justify-content: flex-end;
+    margin-top: 16px;
+    background: #FBBFE7;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-left: 10%;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-icon img{
+    height: 40px;
+    width: 40px;
+  }
+  .contact-icon h4 {
+    display: inline;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin-left: 20px;
+    line-height: 58px;
+    padding-bottom: 10px;
+  }
+  .contact-icon {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 90px;
+  }

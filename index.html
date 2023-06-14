@@ -6,20 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cresia Portofolio</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Hepta+Slab:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
-
-    body {
-      padding: 0;
-      margin: 0;
-      font-family: "poppins";
-      color: #000000;
-      background-color: #FEE2F3;
-      width:100%;
-    }
-
-    </style>
-  </head>
+  <link rel="shortcut icon" href="C.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+ </head>
 
 <body>
   <header>
@@ -31,37 +20,19 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>   
-    <style> 
-    nav ul {
-      float: right;
-      list-style: none;
-      justify-content: end;
-      margin-right: 8.125%;
-      font-family: "hepta slab";
-      font-weight: 600;
-      font-size: 32px;
-    }
-
-    nav li{
-      display: inline;
-      padding-right: 48px;
-      z-index: 500;
-    }
-
-    a{
-      color: #000000;
-      text-decoration: none;
-    }
-
-    </style>
-  </header>
+    </header>
 
     <section class="home" id="home">
     <div class="home-container">
+      <div class="home-container1">
       <div class="home-image">
-        <img src="BlobHome.png" alt="" id="home">
+        <div class="home-image1">
+        <img src="BlobHome.png" alt="" >
+      </div>
+      </div>
       </div>
 
+      <div class="home-container1">
       <div class="home-desc">
       <span>HELLO, I'M</span>
       <span>CRESIA CALISTA</span>
@@ -75,73 +46,13 @@
           <div class="home-readmore"> <a href="#about"> Read More </a></div>
         </div>
       </div>
-      <style>
-        .home{
-          display: flex;
-          justify-content: space-between;
-        }
-  
-        span {
-          display: block;
-          font-size: 48px;
-          font-weight: 600;
-        }
-
-        .home-container {
-          display: flex;
-          justify-content: space-between;
-          top: -110px;
-          z-index: 5;
-          margin-right: 8.125%;
-          margin-left: 8.125%;
-        }
-
-        .home-image {
-          margin-left: 112px;
-          margin-top: -110px;
-          height: 595px;
-          width: 450px;
-          z-index: -1000;
-        }
-
-        .home-rectangle{
-          height: 2px;
-          background-color: black;
-          margin-top: 24px;
-        }
-
-        .home-contact, .home-readmore{
-          font-size: 24px;
-          font-weight: 600;
-          font-family: 'hepta slab';
-          background-color: #FBBFE7;
-          border-radius: 50px;
-          height: 50px;
-          width: 200px;
-          text-align: center;
-          padding-top: 18px;
-          margin-right: 20px;
-        }
-
-        .home-desc{
-          margin: 100px 0px 0px 115px;
-          display:block;
-        }
-
-        .home-button {
-          display: flex;
-        }
-
-        .home h4 {
-          font-size: 24px;
-        }
-      </style>
+      </div>
       </div>
       </section>
-    
-      <section class="about">
+      
+      <section class="about" id="about">
       <div class="about-container">
-        <div class="about-desc" id="about">
+        <div class="about-desc">
         <h2>ABOUT</h2>
         <span>Hi! I'm Cresia Calista Theadora. Im a Digital Marketing. I am a highly motivated person equipped with
           integrity and goals.</span>
@@ -153,33 +64,6 @@
         <img class="about-image" src="BlobAbout.png">
       </div>
       </div>
-      <style>
-        .about span {
-          display: block;
-          font-size: 24px;
-          font-family: 'Poppins';
-          padding-bottom: 20px;
-          font-weight: 400;
-        }
-        .about h2 {
-          font-size: 48px;
-          font-family: 'Hepta Slab';
-          padding-top: 50px;
-        }
-        .about-container {
-          display: flex;
-          margin-right: 8.125%;
-          margin-left: 8.125%;
-          justify-content: space-between;
-        }
-        .about {
-          margin-top: 100px;
-          margin-bottom: 100px;
-          padding-top: 100px;
-          background-color: #FEEEF8;
-          width: 100%;
-        }
-      </style>
     </section>
 
       <section class="details">
@@ -188,7 +72,7 @@
         <h1>Education</h1>
         <span>2018 - 2021</span>
         <span class="details-bold">SMA Katolik Santu Petrus</span>
-        <span>Jurusan Ilmu Sosial</span>
+        <span>Jurusan Ilmu Sosial<br><br></span>
         <span>2021 - 2025</span>
         <span class="details-bold">Universitas Widya Dharma</span>
         <span>Bisnis Digital</span>
@@ -236,56 +120,11 @@
         </div>
       </div>
     </div>
-    <style>
-      .details {
-        margin-left: 8.125%;
-        margin-right: 8.125%;
-        height: 800px;
-      }
-      .details-container {
-        display: flex;
-        justify-content: space-between;
-      }
-      .details span {
-        font-size: 24px;
-        font-weight: 400;
-      }
-      .details h1 {
-        font-size: 48px;
-        font-family: 'Hepta Slab';
-      }
-      .details .details-bold {
-        font-weight: 700;
-      }
-      .prof-skills img {
-        width: 100px;
-        height: 100px;
-        padding-right: 25px;
-        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
-      }
-      .prof-skills {
-        display: flex;
-        justify-content: space-between;
-      }
-      .soft-skills {
-        display: flex;
-        justify-content: space-between;
-      }
-      .soft-skills img {
-        width: 165px;
-        height: 36px;
-      }
-      .soft-skills h4 {
-        font-size: 24px;
-        margin-top: -16px;
-        font-weight: 400;
-      }
-    </style>
   </section>
 
-  <section class="project" id="project">
+  <section class="project">
     <div class="project-container">
-      <h2>PROJECT</h2>
+      <h2 id="project">PROJECT</h2>
       <div class="project-image-container">
         <div class="project-image">
           <div class="project-row1">
@@ -306,68 +145,13 @@
         </div>
       </div>
       </div>
-            <style>
-            .project .img1 {
-              height: 640px;
-              width: 687px;
-              margin-left: 40px;
-            }
-            .project .img2 {
-              height: 640px;
-              width: 435px;
-              margin-left: 40px;
-            }
-            .project .img3 {
-              height: 458px;
-              width: 640px;
-              margin-left: 40px;
-            }
-            .project .img4 {
-              height: 543px;
-              width: 495px;
-              margin-left: 40px;
-            }
-            .project-image-container{
-              display: flex;
-              justify-content: center;
-              margin-left:12.5%;
-              margin-right:12.5%;
-            }
-            .project-row1 {
-              display: flex;
-              flex-wrap: wrap;
-            }
-            .project-row1 img {
-              margin-top: 40px;
-            }
-            .project-image {
-              display: flex;
-              flex-wrap: wrap;
-              text-align: center;
-              filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-              margin-left: 8.125%;
-              margin-right:8.125%;
-            }
-            .project{
-              background-color: #FEEEF8;
-              padding-top: 80px;
-              padding-bottom: 80px;
-              width: 100%;
-            }
-            .project h2 {
-              font-size: 48px;
-              font-family: 'Hepta Slab';
-              text-align: end;
-              margin-right:8.125%;
-            }
-          </style>
-        </div>
+      </div>
       </section>
 
-        <section class="contact" id="contact">
+        <section class="contact">
             <div class="contact-container">
               <div class="contact-title">
-                <h1>CONTACT ME</h1>
+                <h1 id="contact">CONTACT ME</h1>
                 <h2>Let's Work Together</h2>
                 <span>That's all about me</span>
                 <span>Don't feel hesitate to contact me. I would be thrilled to take a</span>
@@ -396,107 +180,7 @@
                 <a href="mailto:cresiacalista310.com@gmail.com"><img src="email.png"/><h4>cresiacalista1310@gmail.com</h4></a>
                 <a href="https://www.whatsapp.com/082150452547"><img src="whatsapp.png"/><h4>082150452547</h4></a>
             </div>
-            <style>
-              .contact h1 {
-                font-size: 80px;
-                font-weight: 600;
-              }
-              .contact {
-                padding-top: 100px;
-                font-family: 'Eczar';
-              }
-              .contact span {
-                display: block;
-                font-size: 32px;
-                font-weight: 400;
-              }
-              .contact h2 {
-                font-size: 48px;
-                font-weight: 500;
-              }
-              .contact .bold {
-                font-weight: 600;
-              }
-              .contact .contact-form {
-                margin-right: 8.125%;
-                display: block;
-              }
-              .contact-title{
-                text-align: center;
-              }
-              .form .contact-form, form .text-input, form textarea {
-                justify-content: center;
-                align-self: center;
-                border: none;
-                outline:none;
-                width: 80%;
-                padding: 25px;
-                font-size:medium;
-                font-weight:bold;
-                margin-bottom: 16px;
-                border-radius: 5px;
-                margin-left: 10%;
-                margin-right: 10%;
-                font-size: 24px;
-                font-weight: 500;
-                font-family: 'poppins';
-              }
-              .form textarea{
-                height: 100px;
-              }
-              .contact label {
-               font-size: 32px;
-               font-weight: 400;
-               font-family: 'poppins';
-               margin-left: 10%;
-               margin-bottom: -26px;
-              }
-              .contact .submit {
-                height: 50px;
-                width: 194px;
-                background-color: #FFF1DC;
-                border-radius: 50px;
-                height: 60px;
-                width: 200px;
-                font-size: 32px;
-                justify-content: flex-end;
-                margin-top: 16px;
-                background: #FBBFE7;
-                text-align: center;
-                font-family: 'Poppins';
-                font-weight: 700;
-                margin-left: 10%;
-              }
-              .contact-form {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-              .contact-icon img{
-                height: 40px;
-                width: 40px;
-              }
-              .contact-icon h4 {
-                display: inline;
-                text-align: center;
-                font-size: 28px;
-                font-family: 'Poppins';
-                font-weight: 400;
-                margin-left: 20px;
-                line-height: 58px;
-                padding-bottom: 10px;
-              }
-              .contact-icon {
-                display: flex;
-                justify-content: space-around;
-                text-align: center;
-                margin-left: 10%;
-                margin-right: 15%;
-                margin-top: 90px;
-              }
-            
-            </style>
-          </section>
+         </section>
 </body>
 
 </html>
